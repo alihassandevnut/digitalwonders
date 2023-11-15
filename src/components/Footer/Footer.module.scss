@@ -1,0 +1,160 @@
+.footer {
+  width: 100%;
+  height: 183px;
+  background: #424061;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: row;
+
+  .company-container {
+    flex-direction: column;
+  }
+
+  .logo-container {
+    padding-top: 21px;
+    .Q-logo {
+      margin-left: 12px;
+    }
+  }
+
+  .text {
+    margin-top: 17px;
+    color: #aaa;
+    font-family: Work Sans;
+    font-size: 15px;
+    width: 20rem;
+    height: 37px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.3px;
+  }
+
+  @media screen and (max-width: 1040px) {
+    .logo-container {
+      padding: 0;
+    }
+    .text {
+      font-size: 12px;
+    }
+  }
+
+  .copyright {
+    margin-top: 13px;
+    display: flex;
+    flex-direction: row;
+    color: #aaa;
+    font-family: Work Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.24px;
+    img {
+      margin-top: 3px;
+      margin-left: 6px;
+      margin-right: 8px;
+    }
+  }
+
+  .Buttons {
+    margin-left: 470px;
+    margin-top: 35px;
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    display: flex;
+    flex-direction: row;
+
+    .heading {
+      font-size: 25px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    .legal {
+      margin-left: 112px;
+    }
+
+    @media screen and (max-width: 1040px) {
+      .heading {
+        font-size: 18px;
+        font-weight: 400;
+      }
+
+      .legal {
+        font-size: 10px;
+      }
+    }
+    @media screen and (max-width: 568px) {
+      .legal {
+        margin-left: 0px;
+        font-size: 12;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1040px) {
+    .Buttons {
+      margin: 0;
+    }
+  }
+
+  .payments {
+    margin-left: 83px;
+    margin-top: 35px;
+    .heading {
+      color: #fff;
+      font-family: Work Sans;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -0.5px;
+    }
+    .card-logo {
+      margin-right: 13px;
+      width: 47px;
+      height: 47px;
+    }
+
+    @media screen and (max-width: 1040px) {
+      .heading {
+        font-size: 15px;
+        font-weight: 400;
+      }
+      .card-logo {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+  @media screen and (max-width: 1040px) {
+    .payments {
+      margin: 0;
+      margin-left: 30px;
+    }
+  }
+  @media screen and (max-width: 568px) {
+    .payments {
+      margin-left: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .footer {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .footer {
+    flex-direction: column;
+    height: auto;
+  }
+}

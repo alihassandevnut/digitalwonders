@@ -1,0 +1,50 @@
+.container {
+  background: #fad0cc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 82px;
+  color: #000;
+  font-family: Work Sans;
+  font-style: normal;
+  line-height: normal;
+
+  .heading1 {
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: -2.4px;
+  }
+  .heading2 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: -1.2px;
+  }
+  .imageWithText {
+    margin-top: 40px;
+    .card {
+      margin-top: 34px;
+      width: 717px;
+      height: auto;
+      img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-right: 27px;
+      }
+    }
+    @media screen and (max-width: 568px) {
+      .card {
+        width: 90vw;
+      }
+    }
+  }
+
+  @media screen and (max-width: 568px) {
+    .heading1 {
+      font-size: 2.5rem;
+    }
+    .heading2 {
+      font-size: 2rem;
+    }
+  }
+}

@@ -1,0 +1,122 @@
+.hero-section-container {
+  margin-top: var(--space-7);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 10rem;
+  margin-left: var(--space-4);
+  margin-right: var(--space-4);
+
+  h1 {
+    width: 100%;
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: bolder;
+    line-height: 1.1;
+    letter-spacing: -1.3px;
+    display: inline-block;
+  }
+
+  p {
+    font-size: larger;
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  img {
+    position: absolute;
+    right: 0;
+    top: 132px;
+  }
+
+  @media screen and (max-width: 1040px) {
+    img {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 568px) {
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      font-size: medium;
+    }
+    .subject-container {
+      width: 90vw !important;
+      height: 11rem !important;
+    }
+  }
+
+  .subject-container {
+    margin-top: 40px;
+    border-radius: 25px;
+    background: #fff;
+    width: 586.061px;
+    height: 137.492px;
+    box-shadow: 5px 5px;
+    padding: 17px 30px;
+  }
+
+  .subject-heading {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: var(--font-weigth-lg);
+    line-height: normal;
+  }
+
+  .subject-bottom-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    input {
+      font-size: 1.1rem;
+      width: 350px;
+      margin: 0;
+      margin-top: 10px;
+    }
+
+    .subject-continue-button {
+      border-radius: 50px;
+      padding: 0.8rem 1.2rem;
+      background-color: var(--secondary-0);
+      text-align: center;
+      transition: all 0.2s ease-in-out;
+
+      svg {
+        margin-left: 9px;
+      }
+    }
+
+    .subject-continue-button:hover {
+      color: white;
+      background-color: rgb(101, 101, 101);
+    }
+
+    @media screen and (max-width: 568px) {
+        input {
+            width: auto;
+        }
+    }
+  }
+
+  @media screen and (max-width: 568px) {
+    .subject-bottom-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .hero-section-container {
+    margin: 0;
+    padding: 1rem;
+  }
+}

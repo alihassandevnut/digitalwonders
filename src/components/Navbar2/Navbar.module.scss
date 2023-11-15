@@ -1,0 +1,67 @@
+.organization-logo {
+  width: 161.443px;
+  height: 43.91px;
+}
+
+.link-section {
+  text-decoration: none;
+}
+
+.navbar-container {
+  display: flex;
+  padding-top: var(--space-2);
+  padding-bottom: 35px;
+  padding-left: 63px;
+  padding-right: 35px;
+  background-color: var(--primary-100);
+}
+
+.navbar-container-background {
+  width: 23rem;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.62);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.navbar-text {
+  color: #893232;
+  font-size: var(--space-1);
+  margin-inline: 10px;
+  padding-inline: 20px;
+  font-style: normal;
+  white-space: nowrap;
+  font-weight: var(--font-weigth-xl);
+  line-height: normal;
+  text-align: center;
+  cursor: pointer;
+}
+
+.active-nav-item {
+  border-bottom: 2px solid var(--secondary-100);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 568px) {
+  .navbar-container {
+    padding: 1rem !important;
+    flex-direction: column;
+  }
+  .vl {
+    display: none;
+  }
+  .navbar-container-background {
+    margin-top: 20px;
+    width: auto;
+  }
+}
+
+.vl {
+  width: 2px;
+  height: 39px;
+  margin-inline: var(--space-2);
+  background: var(--secondary-100);
+}
