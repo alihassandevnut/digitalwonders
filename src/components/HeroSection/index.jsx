@@ -21,8 +21,7 @@ const HeroSection = () => {
           with your assignments?
         </h1>
         <p className="hero-section-paragraph">
-          Struggling to manage your assignments? We can step in and ensure your
-          success.
+          Struggling to manage your assignments? We can step in and ensure your success.
         </p>
         <div className={styles["subject-container"]}>
           <div className={styles["subject-heading"]}>Your Subject!</div>
@@ -35,15 +34,14 @@ const HeroSection = () => {
               />
             </FormControl>
             <div style={{ pointerEvents: subjectName.length ? "all" : "none" }}>
-              <a
-                href={`//api.whatsapp.com/send?phone=+447874126583&text=${subjectName}`}
-                target="_blank"
-                
-              >
-                <div className={styles["subject-continue-button"]} style={{background: subjectName.length ? '#FFC963' : 'rgb(220 191 138)'}}>
+              <a href={`//api.whatsapp.com/send?phone=+447874126583&text=${subjectName}`} target="_blank">
+                <div
+                  className={styles["subject-continue-button"]}
+                  style={{ background: subjectName.length ? "#FFC963" : "rgb(220 191 138)" }}
+                >
                   <span>Continue</span>
                   <span>
-                    <FontAwesomeIcon icon={faPaperPlane} />
+                    <FontAwesomeIcon icon={faPaperPlane} size="1.2rem" />
                   </span>
                 </div>
               </a>
@@ -52,11 +50,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <Image
-        className={styles["organization-logo"]}
-        src={HeroSectionImage}
-        alt="logo"
-      />
+      <Image className={styles["organization-logo"]} src={HeroSectionImage} alt="logo" />
     </div>
   );
 };
