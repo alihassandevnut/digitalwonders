@@ -42,11 +42,9 @@ const Navbar = ({ pathname }) => {
 
   return (
     <div className={styles["navbar-container"]}>
-      <Image
-        className={styles["organization-logo"]}
-        src={CompanyLogo}
-        alt="logo"
-      />
+      <Link href="/Home">
+        <Image className={styles["organization-logo"]} src={CompanyLogo} alt="logo" />
+      </Link>
       <div className={styles["vl"]}></div>
       <div className={styles["navbar-container-background"]}>
         {navbarItems.map((navItem, index) =>
@@ -54,23 +52,13 @@ const Navbar = ({ pathname }) => {
             <div
               key={index}
               onClick={() => scrollToSection(navItem.path)}
-              className={`${styles["navbar-text"]} ${
-                pathname === navItem.path && styles["active-nav-item"]
-              }`}
+              className={`${styles["navbar-text"]} ${pathname === navItem.path && styles["active-nav-item"]}`}
             >
               {navItem.label}
             </div>
           ) : (
-            <Link
-              key={navItem.id}
-              href={navItem.path}
-              className={styles["link-section"]}
-            >
-              <div
-                className={`${styles["navbar-text"]} ${
-                  pathname === navItem.path && styles["active-nav-item"]
-                }`}
-              >
+            <Link key={navItem.id} href={navItem.path} className={styles["link-section"]}>
+              <div className={`${styles["navbar-text"]} ${pathname === navItem.path && styles["active-nav-item"]}`}>
                 {navItem.label}
               </div>
             </Link>

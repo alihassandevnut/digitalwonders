@@ -17,7 +17,6 @@ const Navbar2 = ({ pathname }) => {
   const router = useRouter();
   const [navbarItems, setNavbarItems] = useState(navbarContent);
 
-
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
@@ -46,11 +45,9 @@ const Navbar2 = ({ pathname }) => {
 
   return (
     <div className={styles["navbar-container"]}>
-      <Image
-        className={styles["organization-logo"]}
-        src={CompanyLogo}
-        alt="logo"
-      />
+      <Link href="/Home">
+        <Image className={styles["organization-logo"]} src={CompanyLogo} alt="logo" />
+      </Link>
       <div className={styles["vl"]}></div>
       <div className={styles["navbar-container-background"]}>
         {navbarItems.map((navItem, index) =>
@@ -58,31 +55,20 @@ const Navbar2 = ({ pathname }) => {
             <div
               key={index}
               onClick={() => scrollToSection(navItem.path)}
-              className={`${styles["navbar-text"]} ${
-                pathname === navItem.path && styles["active-nav-item"]
-              }`}
+              className={`${styles["navbar-text"]} ${pathname === navItem.path && styles["active-nav-item"]}`}
             >
               {navItem.label}
             </div>
           ) : (
-            <Link
-              key={navItem.id}
-              href={navItem.path}
-              className={styles["link-section"]}
-            >
-              <div
-                className={`${styles["navbar-text"]} ${
-                  pathname === navItem.path && styles["active-nav-item"]
-                }`}
-              >
+            <Link key={navItem.id} href={navItem.path} className={styles["link-section"]}>
+              <div className={`${styles["navbar-text"]} ${pathname === navItem.path && styles["active-nav-item"]}`}>
                 {navItem.label}
               </div>
             </Link>
           )
         )}
       </div>
-      <div className={styles["button-container"]}>
-      </div>
+      <div className={styles["button-container"]}></div>
     </div>
   );
 };

@@ -5,7 +5,7 @@
   padding-left: 50px;
   padding-right: 50px;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
 
   .company-container {
     flex-direction: column;
@@ -58,8 +58,12 @@
     }
   }
 
+  .footer-left {
+    display: flex;
+    gap: 5rem;
+  }
+
   .Buttons {
-    margin-left: 470px;
     margin-top: 35px;
     color: #fff;
     font-family: Work Sans;
@@ -75,9 +79,6 @@
       font-size: 25px;
       font-weight: 700;
       letter-spacing: 0.5px;
-    }
-    .legal {
-      margin-left: 112px;
     }
 
     @media screen and (max-width: 1040px) {
@@ -105,7 +106,6 @@
   }
 
   .payments {
-    margin-left: 83px;
     margin-top: 35px;
     .heading {
       color: #fff;
